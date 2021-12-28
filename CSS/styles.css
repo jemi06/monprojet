@@ -1,0 +1,55 @@
+                body {
+                    background: #E1F3F0;
+                }
+                
+                h1 {
+                    color: brown;
+                }
+                
+                p.classe1 {
+                    color: rgb(90, 8, 8)
+                }
+                
+                p.classe2 {
+                    color: darkcyan;
+                }
+                
+                p.classe3 {
+                    color: rgb(192, 24, 164);
+                }
+                
+                p.classe4 {
+                    color: coral;
+                }
+                
+                .bleu {
+                    color: #FFFFFF;
+                    background: #0e8dbc;
+                    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+                }
+                
+                .vert {
+                    color: rgb(189, 226, 21);
+                    font-family: fantasy;
+                }
+                
+                .orange {
+                    color: #e0dfdc;
+                    background: #556677;
+                    letter-spacing: .1em;
+                    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+                }
+                
+                .violet {
+                    color: darkorchid;
+                }
+                
+                .img {
+                    background: #D0E4F5 url("/html/image/smiley.png");
+                    background-size: cover;
+                    /*position: absolute;*/
+                    width: 150px;
+                    height: 150px;
+                    float: left;
+                    border-radius: 50px;
+                }

@@ -1,0 +1,56 @@
+body {
+    width: 600px;
+    height: 800px;
+}
+
+.entete {
+    /* float: left; */
+    background-color: rgb(243, 209, 243);
+    width: 600px;
+    height: 100px;
+    position: fixed;
+    text-align: center;
+}
+
+.entete {
+    position: relative;
+}
+
+.barrecorps {
+    position: relative;
+}
+
+.entete div {
+    width: 298px;
+    height: 100px;
+    border: 1px solid black;
+    float: left;
+}
+
+.barrecorps {
+    background-color: rgb(243, 241, 241);
+    border: 2px solid black;
+    width: 600px;
+    height: 420px;
+    display: flex;
+}
+
+.corps div {
+    background-color: red;
+    margin-top: 8px;
+    width: 290px;
+    height: 90px;
+    border: 1px solid black;
+}
+
+.bdroite div {
+    background-color: seagreen;
+    margin: 5px;
+    width: 290px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.piedpage {
+    background-color: rgb(252, 156, 252);
+}

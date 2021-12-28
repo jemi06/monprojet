@@ -1,0 +1,46 @@
+p {
+    background-color: #0cc;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: content-box;
+}
+
+.conteneur {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background-color: #dd6;
+}
+
+.absolu {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+.haut {
+    top: 70px;
+}
+
+.bas {
+    bottom: 20px;
+}
+
+.droite {
+    right: 30px;
+}
+
+.bleu {
+    background-color: blue;
+}
+
+.vert {
+    background-color: green;
+}

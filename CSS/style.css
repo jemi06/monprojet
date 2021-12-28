@@ -1,0 +1,13 @@
+td {
+    border: 2px solid rgb(209, 99, 36);
+    text-align: center;
+}
+
+#header {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+img {
+    border-radius: 50px;
+}
