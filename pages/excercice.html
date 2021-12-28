@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #88a4bb;
+    }
+    
+    h1,
+    h2 {
+        color: rgb(252, 245, 244);
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    #param {
+        background-color: rgb(206, 79, 174);
+        width: 300px;
+        border: 3px solid rgb(255, 254, 255);
+    }
+    
+    #param1 {
+        background-color: rgb(55, 108, 143);
+        width: 300px;
+        height: 100px;
+        border: 3px solid rgb(255, 254, 255);
+    }
+    
+    #param2 {
+        background-color: tomato;
+        width: 300px;
+        height: 100px;
+        border: 3px solid rgb(255, 254, 255);
+    }
+</style>
+
+<body>
+    <div id="param">
+        <p>
+            <h1><u>Inscription</u></h1>
+        </p>
+        <p><label for="nom">votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="ex: barbelet">
+        </p>
+
+        <p><label for="prenom">votre prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="ex: aurore">
+        </p>
+        <p>
+            <label for="date">votre date de naissance</label>
+            <input type="date" id="date" name="date">
+        </p>
+        <p>
+            <label for="pays">de quel pays venez vous?</label>
+            <select name="pays" id="pays">
+                <option value="france">France</option>
+                <option value="pays bas">Pays bas</option>
+                <option value="angleterre">angleterre</option>
+            </select>
+        </p>
+    </div>
+    <p></p>
+    <div id="param1">
+        <table>
+            <tr>
+                <h2><u>choix de couleur</u></h2>
+
+                <td>
+
+                    <input type="checkbox" name="bleu" id="bleu">
+                    <label for="bleu">Bleu</label>
+
+
+                    <input type="checkbox" name="jaune" id="jaune">
+                    <label for="jaune">jaune</label>
+
+
+                    <input type="checkbox" name="rouge" id="rouge">
+                    <label for="rouge">Rouge</label>
+
+
+                    <input type="checkbox" name="noir" id="noir">
+                    <label for="noir">Noir</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p></p>
+    <div id="param2">
+        <table>
+
+            <tr>
+                <h2><u>marque de voiture</u></h2>
+                <td>
+                    <input type="radio" name="renault" id="renault">
+                    <label for="renault">Renault</label>
+
+                    <input type="radio" name="bmw" id="bmw">
+                    <label for="bmw">Bmw</label>
+                    <input type="radio" name="fiat" id="fiat">
+                    <label for="fiat">Fiat</label>
+
+                    <input type="radio" name="peugeot" id="peugeot">
+                    <label for="peugeot">Peugeot</label>
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+    <p>
+        <input type="submit" value="envoyer" /><input type="reset" value="remettre à zéro" />
+    </p>
+
+</body>
+
+</html>

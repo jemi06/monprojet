@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th {
+        border: 2px solid rgb(21, 55, 148);
+        text-align: center;
+    }
+    
+    td {
+        border: 2px solid rgb(209, 99, 36);
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div header>
+        <h1>tableau</h1>
+    </div>
+    <table>
+        <caption>Prix du marche</caption>
+        <tr>
+            <th colspan="3">affiche</th>
+        </tr>
+        <tr>
+            <th>fruits</th>
+            <th>poids</th>
+            <th>prix</th>
+        </tr>
+        <tr>
+            <td>pommes </td>
+            <td>5kg</td>
+            <td>4€</td>
+        </tr>
+        <tr>
+            <td>Fraise </td>
+            <td>2kg</td>
+            <td>5€</td>
+
+        </tr>
+    </table>
+    <p>
+        <h1>test</h1>
+    </p>
+    <table>
+        <tr>
+            <td rowspan="2">fruits</td>
+            <td>pommes</td>
+            <td rowspan="3">5kg</td>
+        </tr>
+        <tr>
+            <td>fraise</td>
+
+        </tr>
+        <tr>
+            <td>légumes</td>
+            <td>carotte</td>
+        </tr>
+    </table>
+    <p>
+        <h1>input et label</h1>
+    </p>
+    <div>
+        <p><label for="nom">votre nom</label>
+            <input value="callay" type="text" id="nom" name="nom" placeholder="ex: barbelet">
+        </p>
+
+        <p><label for="prenom">votre prénom</label>
+            <input type="text" id="prenom" name="prenom" placeholder="ex: aurore">
+        </p>
+        <p>
+            <label for="mail">votre email</label>
+            <input type="text" id="mail" name="mail" placeholder="ex: test@gmail.com">
+        </p>
+        <p>
+            <label for="montext">question</label>
+            <textarea name="montext" id="montext"></textarea>
+        </p>
+
+        <p>
+
+            <input type="checkbox" name="jazz" id="jazz">
+            <label for="jazz">le Jazz</label>
+        </p>
+        <p>
+            <input type="checkbox" name="Rap" id="Rap">
+            <label for="Rap">Rap</label>
+        </p>
+        <p>
+            <h2>Cachez moi ce champs! </h2>
+            <input type="hidden" name="key" value="masecrete" />
+            <label for="nom">nom</label>
+            <input type="text" name="nom" id="nom" />
+        </p>
+
+    </div>
+
+</body>
+
+</html>
