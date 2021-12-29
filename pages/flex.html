@@ -10,29 +10,130 @@
 </head>
 
 <body>
-    <div id="header">
-        <h1>DWWM</h1>
-        <ul>Accueil</ul>
-        <ul>A propos</ul>
-        <ul>Contact</ul>
-    </div>
-    <div class="contenant">
-        <div class="image"><span>Coder</span> dans la Joie<br> Bienvenue sur notre site de developpeur Web</div>
-    </div>
-
-    <div class="partie">
-        <div><img class="picture1" src="/image/html1.jpg"></div>
-        <div class="black"><span>Le but</span></div>
+    <div class="header">
+        <div>
+            <h1>DWWM</h1>
+        </div>
+        <div>
+            <ul class="navigation">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">A Propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="partie2">
+    <div class="image">
+        <div>
+            Coder dans la Joie<br> Bienvenue sur notre site de developpeur Web<br>
+            <a href="#"><button>Entrez</button></a>
+            <br>
+
+        </div>
+
+    </div>
+
+
+    <div class="article1">
+
+        <img class="picture1" src="/image/html1.jpg">
+
+        <div class="black">Le but ultime de la formation <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.<br>
+            <a href="#">
+                <button>plus d'infos</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="article2">
         <div>Notre Adresse <br> Ces commandes sont vraiment sympa</div>
         <div>Les liens partenaires <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</div>
         <div>Notre équipe <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. </div>
     </div>
-    }
-    <div></div>
-    <div></div>
+
+
+    <div class="article3">
+        <div><span> Propos des DWWM </span> <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</div>
+        <img class="picture2" src="/image/html1.jpg">
+    </div>
+
+    <div class="article4">
+        <div><span>L'avis : </span> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </div>
+    </div>
+    <div>
+        <div class="param">
+
+            <h2>Les Formulaires</h2>
+
+            <p>votre nom</p>
+            <input type="text" id="nom" name="nom">
+
+            <p>votre prénom</p>
+            <input type="text" id="prenom" name="prenom">
+            <p></p>
+            <nom>Votre Nationnalite</nom>
+            <select name="pays" id="pays" size="3">
+                <option value="francaise">Française</option>
+                <option value="Anglais">Anglais</option>
+                <option value="Allemand">Allemand</option>
+                <option value="Portugais">Portugais</option>
+                <option value="Italien">Italien</option>
+                <option value="Espagnol">Espagnol</option>
+            </select>
+
+            <table>
+                <tr>
+                    <h2>Votre choix divers
+                        <</h2>
+                            <td>
+                                <input type="checkbox" name="Pop" id="Pop">
+                                <label for="Pop">Pop</label>
+
+                                <input type="checkbox" name="Rock" id="Rock">
+                                <label for="Rock">Rock</label>
+
+                                <input type="checkbox" name="Classique" id="Classique">
+                                <label for="Classique">Classique</label>
+
+                                <input type="checkbox" name="Hard" id="Hard">
+                                <label for="Hard">Hard</label>
+                            </td>
+                </tr>
+            </table>
+        </div>
+        <p></p>
+        <div id="param2">
+            <table>
+
+                <tr>
+                    <h2><u>marque de voiture</u></h2>
+                    <td>
+                        <input type="radio" name="renault" id="renault">
+                        <label for="renault">Renault</label>
+
+                        <input type="radio" name="bmw" id="bmw">
+                        <label for="bmw">Bmw</label>
+                        <input type="radio" name="fiat" id="fiat">
+                        <label for="fiat">Fiat</label>
+
+                        <input type="radio" name="peugeot" id="peugeot">
+                        <label for="peugeot">Peugeot</label>
+                    </td>
+
+                </tr>
+
+            </table>
+        </div>
+
+        <p>
+            <input type="submit" value="affiche" />
+        </p>
+    </div>
     <div></div>
 
 </body>
