@@ -8,9 +8,23 @@
     <link rel="stylesheet" href="/CSS/style-contact.css">
     <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
     <title>Document</title>
+
+
 </head>
 
 <body>
+    <div class="fond">
+        <div class="menu1">
+            <!--Menu du haut-->
+            DWWM
+        </div>
+        <div class="menu2">
+            <a href="index.html">Accueil</a>
+            <a href="propos.html">A Propos</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
     <div>
         <div class="param">
 
@@ -21,37 +35,51 @@
 
             <p>votre prénom</p>
             <input type="text" id="prenom" name="prenom">
-            <p></p>
-            <nom>Votre Nationnalite</nom>
-            <select name="pays" id="pays" size="3">
-                <option value="francaise">Française</option>
-                <option value="Anglais">Anglais</option>
-                <option value="Allemand">Allemand</option>
-                <option value="Portugais">Portugais</option>
-                <option value="Italien">Italien</option>
-                <option value="Espagnol">Espagnol</option>
-            </select>
 
-            <table>
-                <tr>
-                    <h2>Votre choix divers
-                    </h2>
-                    <td>
-                        <input type="checkbox" name="Pop" id="Pop">
-                        <label for="Pop">Pop</label>
+            <div id="identite">
+                <div id="label"> votre Nationnalite</div>
+                <br>
+                <select name="pays" id="pays" size="4">
+                    <option value="francaise">Française</option>
+                    <option value="Anglais">Anglais</option>
+                    <option value="Allemand">Allemand</option>
+                    <option value="Portugais">Portugais</option>
+                    <option value="Italien">Italien</option>
+                    <option value="Espagnol">Espagnol</option>
+                </select>
+            </div>
 
-                        <input type="checkbox" name="Rock" id="Rock">
-                        <label for="Rock">Rock</label>
 
-                        <input type="checkbox" name="Classique" id="Classique">
-                        <label for="Classique">Classique</label>
+            <div class="choix">
+                <div id="choix">Votre choix divers</div>
+                <div class="checkbox">
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="Pop" id="Pop">
+                            <label for="Pop">Pop</label>
 
-                        <input type="checkbox" name="Hard" id="Hard">
-                        <label for="Hard">Hard</label>
-                    </td>
-                </tr>
-            </table>
+                            <input type="checkbox" name="Rock" id="Rock">
+                            <label for="Rock">Rock</label>
 
+                            <input type="checkbox" name="Classique" id="Classique">
+                            <label for="Classique">Classique</label>
+
+                            <input type="checkbox" name="Hard" id="Hard">
+                            <label for="Hard">Hard</label>
+                        </td>
+                    </tr>
+                </div>
+
+                <div class="check2">
+                    <fieldset>
+                        <legend>Divers</legend>
+                        <textarea name="text2" id="text2" cols="30" rows="10"></textarea>
+                    </fieldset>
+
+                </div>
+
+            </div>
+            <input type="submit" value="Affiche">
         </div>
         <div class="pieddepage">
             <div class="droite">
@@ -67,10 +95,12 @@
                 <p>Lorem, ipsum dolor sit consectetur adipisic. Nulla temporibus unde reiciendis error dele. Voluptatibus perligaium mollitia temporibus</p>
             </div>
         </div>
+
         <div class="footer">
             <p>DWWM - CopyRight 2021</p>
         </div>
 
+    </div>
 </body>
 
 </html>
