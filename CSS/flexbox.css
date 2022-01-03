@@ -1,6 +1,7 @@
 body {
     width: 900px;
-    height: 900px
+    height: 900px;
+    background-image: url(/image/Sprinkle.svg);
 }
 
 .main {
