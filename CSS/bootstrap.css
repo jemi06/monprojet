@@ -1,7 +1,7 @@
-.container-fluid {
-    background-color: darkred;
-}
-
 .navbar-light .navbar-brand {
     color: darkturquoise;
+}
+
+.dropdown-menu {
+    color: brown;
 }

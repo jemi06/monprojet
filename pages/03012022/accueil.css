@@ -68,17 +68,17 @@ nav>ul>li>a {
 }
 
 .menu-stock:hover {
-    border-top: 5px solid #e44d26;
-    background-color: rgba(228, 77, 38, 0.15);
+    border-top: 5px solid #36c20b;
+    background-color: rgba(21, 126, 39, 0.15);
 }
 
 .menu-entree:hover {
-    border-top: 5px solid #0070bb;
+    border-top: 5px solid #f3a347;
     background-color: rgba(000, 112, 192, 0.15);
 }
 
 .menu-sortie:hover {
-    border-top: 5px solid #f1dc4f;
+    border-top: 5px solid #e266d2;
     background-color: rgba(241, 211, 79, 0.15);
 }
 
@@ -92,15 +92,15 @@ nav>ul>li:hover a {
 }
 
 .menu-stock .sousmenu {
-    background-color: #e44d26;
+    background-color: #36c20b;
 }
 
 .menu-entree .sousmenu {
-    background-color: #0070bb;
+    background-color: #f3a347;
 }
 
 .menu-sortie .sousmenu {
-    background-color: #f1dc4f;
+    background-color: #e266d2;
 }
 
 .menu-location .sousmenu {
