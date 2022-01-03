@@ -53,41 +53,12 @@ header {
     border-radius: 10px;
 }
 
-
-/* BANNIERE PUB */
-
-.pub {
-    flex-direction: column;
-    border: 1px solid cyan;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: cyan;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.pub img {
-    width: 120%;
-    margin: 0;
-    padding: 3px;
-}
-
-
-/* BANNIERE IMAGE */
-
-
-/* PIED DE PAGE */
-
 footer {
     width: 100%;
     text-align: center;
     border: 1px solid deepskyblue;
     background-color: deepskyblue;
 }
-
-
-/*#endregion*/
 
 
 /* Menu du haut */

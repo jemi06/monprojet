@@ -51,20 +51,6 @@ header {
     border-radius: 10px;
 }
 
-.pub {
-    display: none;
-}
-
-
-/* PIED DE PAGE */
-
-footer {
-    width: 100%;
-    text-align: center;
-    border: 1px solid deepskyblue;
-    background-color: deepskyblue;
-}
-
 
 /* Menu du haut */
 
