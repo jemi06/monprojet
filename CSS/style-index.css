@@ -168,7 +168,7 @@ body {
 .gauche {
     flex-direction: column;
     text-align: center;
-    padding: 60px 30px 60px 30px;
+    padding: 60px 0px 60px 0px;
 }
 
 .milieu2 {
