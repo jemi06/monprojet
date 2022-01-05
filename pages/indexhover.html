@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p {
+            visibility: hidden;
+        }
+        
+        .container>p::before {
+            content: "survol le boutton...";
+            visibility: visible;
+        }
+        
+        .boutton {
+            width: 150px;
+            height: 80px;
+            background-color: blue;
+            margin: 55px;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .boutton:hover {
+            background-color: burlywood;
+            border-radius: 15px;
+            transition: all 0.5s;
+            transition-delay: 0.5s;
+            transform: rotate(360deg);
+        }
+        
+        .container:hover>p {
+            transition-delay: 1s;
+            visibility: visible;
+        }
+        
+        .container:hover>p::after {
+            content: " Je suis Sourd";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a class="boutton" href="#">cliquez moi</a>
+        <p>Désole</p>
+    </div>
+
+</body>
+
+</html>

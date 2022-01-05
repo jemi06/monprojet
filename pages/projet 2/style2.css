@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    gap: 50px;
+    height: 100vh;
+    /*each box is 200px by 200px*/
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px;
+    border: 1px solid;
+    /* changer the values   to experiment*/
+    justify-items: end;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+    display: grid;
+    border: black 1px solid;
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    justify-items: center;
+    align-items: center;
+}
