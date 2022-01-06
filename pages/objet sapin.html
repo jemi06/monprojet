@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objet sapin</title>
+</head>
+
+<body>
+    <script>
+        function sapinA(num, motif) {
+            let i, j, k;
+            k = num - 1;
+            for (i = 1; i <= num; i++) {
+                for (j = 1; j <= k; j++) {
+                    document.write("");
+                }
+
+                for (j = 1; j <= 2 * i - 1; j++) {
+                    {
+                        document.write(motif);
+                    }
+                    document.write("<br>");
+                    k--;
+                }
+            }
+        }
+
+        sapinA(10, "^");
+    </script>
+</body>
+
+</html>

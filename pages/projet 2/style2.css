@@ -1,16 +1,21 @@
 .container {
     display: grid;
-    gap: 50px;
+    gap: 20px;
     height: 100vh;
     /*each box is 200px by 200px*/
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 5fr);
     border: 1px solid;
     /* changer the values   to experiment*/
-    justify-items: end;
 }
 
-.box-1,
+.box-1 {
+    grid-row: 2/5;
+    background-color: aquamarine;
+}
+
+
+/*.box-1,
 .box-2,
 .box-3,
 .box-4 {
@@ -21,4 +26,4 @@
     height: 100px;
     justify-items: center;
     align-items: center;
-}
+}*/

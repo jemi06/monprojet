@@ -24,14 +24,14 @@
 
 .item {
     display: grid;
-    grid-row: span 8;
+    grid-row: span 10;
     grid-column: span 10;
     background-color: greenyellow;
 }
 
 .box-3 {
     gap: 20px 20px;
-    grid-row: 3/4;
+    grid-column: span 4;
     background-color: fuchsia;
 }
 
