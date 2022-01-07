@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <div id="couleur">
+
+    </div>
     <script>
         //let maVar = prompt("votre nom:");
 
@@ -50,10 +53,23 @@
 
         var couleur;
 
-        for (let i = 1; i <= 100; i++) {
+        for (i = 1; i <= 100; i++) {
             if (i % 2 === 0) {
                 couleur += "font-weight:bold;";
 
+            }
+            if (i % 11 === 0) {
+                couleur += "color:whrite;background-color:green;"
+            }
+
+            if (i % 5 === 0) {
+                couleur += "color:red;"
+            }
+
+            if (i % 17 == 0) {
+                document.write("<div style='" + couleur + "'>boo</div>");
+            } else {
+                document.write("<div style='" + couleur + "'>" + i + "</div>");
             }
 
         }

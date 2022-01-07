@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function calc(x, y, op) {
+            if (op == "+") {
+                let result = x + y;
+                document.write("la somme est :" + result);
+
+            } else if (op == "-") {
+                let result = x - y;
+                document.write("la  soustraction est : " + result);
+
+
+            } else if (op == "*") {
+                let result = x * y;
+                document.write("le multiplication est :" + result);
+
+            } else if (op == "/") {
+                if (y === 0) {
+                    document.write("Division par 0 impossible !!");
+                } else {
+                    let result = x / y;
+                    document.write("le divison est " + result);
+
+                }
+            }
+
+        }
+
+        let x = parseInt(prompt("premier chiffre"));
+        let y = parseInt(prompt("second chiffre"));
+        let op = prompt("operateur");
+        console.log(typeof(x));
+        calc(x, y, op);
+    </script>
+
+</body>
+
+</html>
