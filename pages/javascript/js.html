@@ -54,16 +54,16 @@
         var couleur;
 
         for (i = 1; i <= 100; i++) {
-            if (i % 2 === 0) {
+            if (i % 2 == 0) {
                 couleur += "font-weight:bold;";
 
             }
-            if (i % 11 === 0) {
-                couleur += "color:whrite;background-color:green;"
+            if (i % 11 == 0) {
+                couleur += "color:whrite;background-color:green;";
             }
 
-            if (i % 5 === 0) {
-                couleur += "color:red;"
+            if (i % 5 == 0) {
+                couleur += "color:red;";
             }
 
             if (i % 17 == 0) {
@@ -72,8 +72,8 @@
                 document.write("<div style='" + couleur + "'>" + i + "</div>");
             }
 
+            couleur = "";
         }
-        couleur = "";
     </script>
 
 
