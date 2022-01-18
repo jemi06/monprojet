@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <script>
+        function somme(){
+            var nbr1, nbr2, som;
+            nbr1 = Number(document.getElementById("nbr1").value);
+            nbr2 = Number(document.getElementById("nbr2").value);
+            som = nbr1 + nbr2;
+            document.getElementById("som").value=som;
+        }
+     </script>
+      <script>
+        function multiplication(){
+            var nbr1m, nbr2m, mult;
+            nbr1m = Number(document.getElementById("nbr1m").value);
+            nbr2m  = Number(document.getElementById("nbr2m").value);
+            mult = nbr1m * nbr2m;
+            document.getElementById("mult").value=mult;
+        }
+     </script>
+     <script>
+        function soustraction(){
+            var nbr1s, nbr2s, sous;
+            nbr1s = Number(document.getElementById("nbr1s").value);
+            nbr2s = Number(document.getElementById("nbr2s").value);
+            sous = nbr1s - nbr2s;
+            document.getElementById("sous").value=sous;
+        }
+     </script>
+
+<script>
+    function divison(){
+        var nbr1d, nbr2d, div;
+        nbr1d = Number(document.getElementById("nbr1d").value);
+        nbr2d = Number(document.getElementById("nbr2d").value);
+        div = nbr1d / nbr2d;
+        document.getElementById("div").value=div;
+    }
+ </script>
+</head>
+<body>
+    <div>
+        <input id="nbr1"> + <input id="nbr2">
+        <button onclick="somme()">Calculer la somme</button>
+        <input id="som">
+    </div>
+
+    <div>
+     <input id="nbr1m"> * <input id="nbr2m">
+     <button onclick="multiplication()">Calculer la multiplication</button>
+     <input id="mult">
+     </div>
+
+     <div>
+        <input id="nbr1s"> - <input id="nbr2s">
+        <button onclick="soustraction()">Calculer la soustraction</button>
+        <input id="sous">
+        </div>
+
+        <div>
+            <input id="nbr1d"> / <input id="nbr2d">
+            <button onclick="divison()">Calculer la divison</button>
+            <input id="div">
+        </div>
+  </body>
+    
+</body>
+</html>

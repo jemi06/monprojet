@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="/pages/javascript/dom.js"></script>!-->
+</head>
+<body>
+
+    <div id="moi">c'est moi</div>
+    <div class="premier">premier</div>
+    <div class="second">second 1</div>
+    <div class="second">second 2</div>
+
+
+<script>
+    let moi=document.getElementById('moi');
+     console.log(moi);
+
+     let class1=document.getElementsByClassName('premier');
+     console.log(class1);
+
+     let class2=document.getElementsByClassName('second');
+     console.log(class2);
+
+     document.getElementById('moi').innerText="qui ecrit";
+
+     document.getElementById('moi').innerHTML="<div></div>";
+
+     const elt = document.querySelector("#moi");
+     console.log(elt)
+
+     const elts = document.querySelector(".second");
+     console.log(elts);
+
+
+     const elts2 = document.querySelectorAll(".second");
+     console.log(elts2);
+
+
+
+</script>
+    
+</body>
+</html>

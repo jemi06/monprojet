@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <script>
+        function recup(click_id){
+            let nbr1 = Number(document.getElementById("input 1").value);
+            let nbr2 = Number(document.getElementById("input 2").value);
+            
+        }
+        function somme(x,y){
+            document.getElementById("som").value=nbr1 + nbr2;
+        }
+
+        function multiplication(x,y){
+            document.getElementById("mult").value=nbr1 * nbr2;
+        }
+
+
+        function soustraction(x,y){
+            document.getElementById("sous").value=nbr1 - nbr2;
+        }
+  
+
+        function divison(x,y){
+            document.getElementById("div").value=nbr1 / nbr2;
+         }
+
+ </script>
+      
+</head>
+<body>
+    <input type="text" id="input1" placeholder="nombre 1">
+    <input type="text" id="input2" placeholder="nombre 2">
+    <input type="text" id="result" placeholder="total">
+    <button class="btn btn-primary" id="add" onclick="recup()">+</button>
+
+  </body>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div id="parent">
+        <div id="premier">premiere div</div>
+        <div id="main">
+            <p>premier</p>
+            <p>second</p>
+            <p>troisieme</p>
+            <div id="dedans">dedans</div>
+        </div>
+        <div id="dernier">dernier</div>
+    </div>
+    <script>
+
+        const txtdedans = document.getElementById("dedans")
+        
+                console.log(txtdedans);
+        
+                console.log(txtdedans.parentElement)
+        
+                console.log(txtdedans.parentElement.parentElement.children[0])
+                console.log(txtdedans.parentElement.parentElement.children[2])
+        
+        
+        </script>
+</body>
+
+</html>

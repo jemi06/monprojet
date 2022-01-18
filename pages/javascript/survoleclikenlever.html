@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h2>Doucement objet</h2>
+    <h3>Methode addEventListener()</h3>
+    <p> bienvenue "Hello Deaf"</p>
+    <p>click dans la page et supprimer un bouton", </p>
+     
+    <button id="btn">cliquez ici</button>
+
+    <script>
+     document.getElementById("btn").onmousedown= function(){mouesdown()};
+     document.getElementById("btn").onmouseup= function(){mouseUp()};
+
+    function mouseDown (){
+        document.getElementById("btn").innerHTML = "bouton";
+    }
+
+    function mouseUp (){
+        document.getElementById("btn").innerHTML = "nouvelle bouton";
+    }
+        
+    </script>
+
+</body>
+
+</html>
