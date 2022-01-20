@@ -143,8 +143,9 @@ footer {
     display: flex;
     position: relative;
     background-image: url("/image/callayjeremie.jpg");
-    width: 180px;
-    height: 180px;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
 }
 
 .center {

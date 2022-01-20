@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let G1 = [12, 14, 08, 11, 17];
+        console.log(G1);
+        let res1 = G1.reduce((moy, i) => {
+            moy += i / G1.length;
+            return moy;
+        }, 0)
+        console.log(`Moyenne des elements du tableau : ${res1}`);
+
+        res2 = G1.reduce((max, i) => {
+            return Math.max(max, i);
+        }, 0)
+        console.log(`meilleur note des elements du tableau : ${res2}`);
+
+        res3 = G1.reduce((min, i) => {
+            return Math.min(min, i);
+        })
+        console.log(`mauvais note des elements du tableau : ${res3 }`);
+    </script>
+
+</body>
+
+</html>

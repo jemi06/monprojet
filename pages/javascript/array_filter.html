@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cours JS le 20 janvier 2022</title>
+</head>
+
+<body>
+    <script>
+        var personnes = [{
+            nom: "Martine",
+            married: false
+        }, {
+            nom: "Emmanuelle",
+            married: true
+        }, {
+            nom: "Emilie",
+            married: false
+        }, {
+            nom: "Coralie",
+            married: true
+        }, {
+            nom: "Aurelie",
+            married: false
+        }];
+
+        function funcAgregation(resultat, personn) {
+            var sep = personn.married;
+            if (!resultat[sep]) {
+                resultat[sep] = [];
+            }
+            resultat[sep].push(personn);
+            return resultat;
+        }
+        var groupeMarried = personnes.reduce(funcAgregation, {});
+
+        console.log(groupeMarried);
+    </script>
+</body>
+
+</html>
