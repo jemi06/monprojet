@@ -9,26 +9,52 @@
 </head>
 
 <body>
-    <script>
-        let G1 = [12, 14, 08, 11, 17];
-        console.log(G1);
-        let res1 = G1.reduce((moy, i) => {
-            moy += i / G1.length;
-            return moy;
-        }, 0)
-        console.log(`Moyenne des elements du tableau : ${res1}`);
+    
+        <script>
+var groupe = [{
+    nom: "G1",
+    note: [12, 14, 08, 11, 17]
+}, {
+    nom: "G2",
+    note: [10, 15, 11, 14, 05]
+}, {
+    nom: "G3",
+    note: [13, 12, 14, 16, 10]
+}, {
+    nom: "G4",
+    note: [6, 19, 10, 19, 13]
+}];
 
-        res2 = G1.reduce((max, i) => {
-            return Math.max(max, i);
-        }, 0)
-        console.log(`meilleur note des elements du tableau : ${res2}`);
+function funcAgreg(resultat, grou) {
+    var prop = grou.note;
+    if (!resultat[prop]) {
+        resultat[prop] = [];
+    }
+    resultat[prop].push(grou);
+    return resultat;
+}
+var repartitionNote = groupe.reduce(funcAgreg, {});
 
-        res3 = G1.reduce((min, i) => {
-            return Math.min(min, i);
-        })
-        console.log(`mauvais note des elements du tableau : ${res3 }`);
-    </script>
+console.log(repartitionNote);
+</script>
 
+let res1 = G1.reduce((moy, i) => {
+    moy += i / G1.length;
+    return moy;
+}, 0)
+console.log(`Moyenne des elements du tableau : ${res1}`);
+
+res2 = G1.reduce((max, i) => {
+    return Math.max(max, i);
+}, 0)
+console.log(`meilleur note des elements du tableau : ${res2}`);
+
+res3 = G1.reduce((min, i) => {
+    return Math.min(min, i);
+})
+console.log(`mauvais note des elements du tableau : ${res3 }`);
+
+console.table(groupe);
 </body>
 
 </html>
