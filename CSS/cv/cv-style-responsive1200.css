@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    background-color: rgb(36, 36, 36);
     font-family: 'Merriweather'
 }
 
@@ -13,6 +12,7 @@ body {
     height: 100vh;
     width: 1024px;
     margin: auto;
+    background-color: rgb(102, 100, 100);
 }
 
 
@@ -20,47 +20,21 @@ body {
 
 header {
     width: 100%;
-    border: 1px solid deepskyblue;
     text-align: center;
-    background-color: deepskyblue;
 }
 
 
 /* CORPS PRINCIPAL */
 
-.corps {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-
-/* MENU DE GAUCHE */
-
-.menugauche {
-    flex-direction: column;
-    padding-top: 25px;
-    background-color: floralwhite;
-    justify-content: space-around;
-    align-content: center;
-}
-
-.menugauche a {
-    text-decoration: none;
-    margin: 25px;
-    padding-bottom: 5px;
-}
-
-.menugauche a:hover {
-    background-color: tomato;
-    border-radius: 10px;
-}
-
-
 .page {
+    background-color: rgb(219, 217, 217);
+    width: auto;
+    height: auto;
+}
+
+.header {
     display: flex;
     flex-direction: row;
-   
     width: auto;
     height: 250px;
     margin-top: 10px;
@@ -69,77 +43,120 @@ header {
 .left {
     display: flex;
     flex-direction: column;
-    border: rgb(161, 69, 69) 3px solid;
     align-items: center;
-    margin: 5px;
 }
 
 .photo {
     display: flex;
     background-image: url("/image/callayjeremie.jpg");
     background-size: cover;
-    width:250px;
+    width: 250px;
     height: 250px;
-}
-
-p {
-font-size: 25px;
-color:blanchedalmond ; 
-margin-left: 10px;
-
-
 }
 
 .center {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    border: rgb(71, 50, 167) 3px solid;
+    width: 80%;
     color: rgb(255, 255, 255);
 }
 
-.nom{
+.nom {
     display: flex;
-    flex-direction: row ; 
+    flex-direction: row;
     height: 100px;
 }
-#nom{
+
+#nom {
     background-color: rgb(71, 68, 71);
     width: 80%;
     font-size: 30PX;
-    padding: 10px;
+    padding: 20px;
 }
-#cv{
-    background-color: rgb(51, 50, 51);
+
+#cv {
+    display: flex;
+    background-color: rgb(94, 94, 94);
+    background-image: url("/image/cv/telecharger.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 20%;
 }
 
-
-.sousnom{
+.sousnom {
     display: flex;
-    flex-direction: row ; 
-    height: 100px; 
+    flex-direction: row;
+    height: 100px;
 }
 
-#metier{
+#metier {
     background-color: rgb(56, 55, 56);
     width: 80%;
     font-size: 30PX;
-    padding: 10px;
+    padding: 20px;
 }
-#logo{
+
+#logo {
+    display: block;
     background-color: rgb(39, 38, 39);
+    background-image: url("/image/cv/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
     width: 20%;
 }
-
-
 
 .menu {
     display: flex;
     flex-direction: row;
-    
+    height: 75px;
 }
 
+#vert,
+#bleu,
+#violet,
+#orange,
+#rouge {
+    display: flex;
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    align-items: end;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+#vert {
+    background-color: rgb(27, 161, 27);
+    background-image: url("/image/cv/home.png");
+}
+
+#bleu {
+    background-color: rgb(67, 65, 163);
+    background-image: url("/image/cv/resume.png");
+}
+
+#violet {
+    background-color: rgb(164, 59, 196);
+    background-image: url("/image/cv/profil.png");
+}
+
+#orange {
+    background-color: rgb(224, 145, 80);
+    background-image: url("/image/cv/experience.png");
+}
+
+#rouge {
+    background-color: rgb(245, 92, 92);
+    background-image: url("/image/cv/contact.png");
+}
+
+.contrainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(219, 217, 217);
+    width: auto;
+    height: 400px;
+}
 
 
 /* PIED DE PAGE */

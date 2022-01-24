@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(218, 203, 76);
+    width: auto;
+    height: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#myH2 {
+    color: rgb(144, 208, 238);
+}
+
+#myP {
+    color: rgb(255, 0, 0);
+}
+
+#myP2 {
+    color: rgb(26, 37, 37);
+}

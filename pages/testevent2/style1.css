@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(27, 131, 131);
+    width: auto;
+    height: auto;
+    color: rgb(174, 252, 252);
+}
+
+#myH2 {
+    color: lightgreen;
+}
+
+#myP {
+    color: rgb(138, 83, 133);
+}
+
+#myP2 {
+    color: rgb(238, 144, 156);
+}
