@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2? family= Abril+Fatface & family= Italianno & family= Lobster & family= Roboto:wght@700 & display=swap');
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Italianno', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Courgette&display=swap');
+
+/* font-family: 'Calistoga', cursive;
+font-family: 'Courgette', cursive; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(124, 48, 48);
+}
+
+body>div {
+    width: 700px;
+    height: 700px;
+    background-color: rgb(241, 202, 118);
+    border: black 1px solid;
+    box-shadow: black 15px 15px 15px;
+}
+
+#tableauDesRecettes {
+    width: 700px;
+    height: 700px;
+    border: black 3px solid;
+    border-top-left-radius: 15px;
+    border-right: double 5px black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#fondcolor {
+    display: flex;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(241, 202, 118);
+    border-top-right-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border: black 7px solid;
+    border-left: double 5px black;
+}
+
+#affichage {
+    box-sizing: border-box;
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(207, 255, 33, 0.178);
+    border-radius: 9px;
+    border: solid rgba(202, 170, 25, 0.562) 3px;
+    color: green;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h3 {
+    color: rgb(189, 12, 145);
+}
+
+#affichage>h3 {
+    color: black;
+}
+
+h1 {
+    /* margin-bottom: 50px; */
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Calistoga', cursive; */
+    font-family: 'Courgette', cursive;
+    /* text-decoration: underline coral; */
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    margin: 7px;
+    text-align: center;
+    outline-color: rgb(80, 255, 133);
+    border: solid 2px coral;
+}
+
+#bloc1,
+#bloc2,
+#bloc3,
+#bloc4 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ajouter,
+#supprimer {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    border: solid 3px;
+}
+
+span {
+    color: rgb(44, 9, 241);
+}
+
+#kul {
+    display: flex;
+    /* padding-top: 10px; */
+    /* display: flex; */
+    width: 150px;
+    height: 30px;
+    /* background-color: rgb(185, 252, 179); */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    outline: coral;
+    color: green;
+    border: solid 5px rgb(255, 238, 0);
+    position: absolute;
+    bottom: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#affichage>div {
+    width: 300px;
+    height: auto;
+    display: flex;
+    background-color: rgb(242, 245, 64);
+    margin: 10px;
+    padding: 5px;
+    border: solid 5px rosybrown;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 10%;
+}
+
+
+/* #form {
+    justify-content: center;
+    display: flex;
+    height: 700px;
+    width: 700px;
+    align-items: center;
+} */
+
+#ajoutIngredient {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    color: rgb(83, 195, 18);
+    font-size: 35px;
+    position: absolute;
+    bottom: 310px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 91, 195);
+    border: solid 3px rgb(83, 195, 18);
+    border-radius: 50%;
+}
+
+#ingredient,
+#quantite {
+    border: solid 3px rgb(80, 91, 195);
+}
+
+#cercle {
+    height: 50px !important;
+    width: 50px !important;
+    background-color: rgb(207, 57, 57) !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    bottom: 680px !important;
+}
