@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" id='style' href="">
+    <title>bouton ajouter et suipprimer</title>
+    <!--CSS only-->
+
+</head>
+
+<body>
+
+    <h1 id="myH2">Document objet</h1>
+    <h2 id="myP">Méthode addEventListener() </h2>
+
+    <p id="myP2">bouton ajouter et suipprimer</p>
+
+    <div id="demo">
+        <button id="ajout" onclick="ajouterbtn()">nouveau style</button><br>
+    </div>
+    <div id="supp">
+    </div>
+    <div id="btn">
+    </div>
+    <br><br>
+    <button id="css1" onclick="document.getElementById('style').href='/pages/testevent2/style1.css' ">style1</button><br><br>
+    <button id="css2" onclick="document.getElementById('style').href='/pages/testevent2/style2.css'">style2</button>
+    <br><br>
+    <div id="img">
+        <img src="/image/afci.png" alt="afci" id="img">
+    </div>
+
+
+    <script>
+        function ajouterbtn() {
+            document.getElementById("btn").innerHTML = `<button id="ajouterbtn" >newStyle</button>`;
+            document.getElementById("ajout").remove();
+            document.getElementById("supp").innerHTML = `<button id="supprimerbtn" onclick="suppbtn()">supprimer</button>`;
+        }
+
+        function suppbtn() {
+            document.getElementById("ajouterbtn").remove();
+            document.getElementById("demo").innerHTML = `<button id="ajout" onclick="ajouterbtn()">Ajouter</button>`;
+            document.getElementById("supprimerbtn").remove();
+
+        }
+    </script>
+
+</body>
+
+</html>

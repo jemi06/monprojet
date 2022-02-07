@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/projet1701/ete.css">
+    <title>Projet saison</title>
+</head>
+
+<body>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 LE MENU                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div class="menu">
+        <div class="menugauche">
+            <ul>
+                <li>Accueil</li>
+                <li>A Propos</li>
+                <li>Contact</li>
+
+            </ul>
+        </div>
+        <div class="menudroit">
+            <button onclick="cssete()">Eté</button>
+            <button onclick="csshiver()">Hiver</button>
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              LE SOUS MENU                               -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <div class="article1">
+        <div id="photo">
+        </div>
+
+        <div class="calc">
+            <div class="nbm">
+                <input type="text" id="input1" placeholder="nombre 1">
+                <input type="text" id="input2" placeholder="nombre 2">
+            </div>
+            <div class="total">
+                <input type="text" id="result" placeholder="total">
+            </div>
+            <div class="bouton1">
+                <button class="btn btn-primary" id="add" onclick="recup(this.id)">+</button>
+                <button class="btn btn-primary" id="multi" onclick="recup(this.id)">X</button>
+            </div>
+            <div class="bouton2">
+                <button class="btn btn-primary" id="divi" onclick="recup(this.id)">/</button>
+                <button class="btn btn-primary" id="soust" onclick="recup(this.id)">-</button>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                       LE CONTAINER + BLOOC TEXTE                        -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="article2">
+        <div class="texte">
+            Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+            dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nam iure hic nihil totam accusantium aliquid, nesciunt temporibus ratione pariatur sequi consectetur,
+            quod sit porro dolorum dolorem aperiam modi placeat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus iure expedita dignissimos, explicabo minus sed autem praesentium voluptates ipsam quos adipisci ad magni quas omnis.
+        </div>
+    </div>
+
+</body>
+
+</html>

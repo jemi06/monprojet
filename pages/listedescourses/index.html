@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/listedescourses/style.css" />
+    <title>RECETTE DU 25.01 javascript dom</title>
+
+</head>
+
+<body>
+    <h1>
+        Liste de courses
+    </h1>
+    <br><br>
+
+    <div id="recette">
+        <label for="nomrecette">NOM DE LA RECETTE : </label><input id='nomrecette' type="text">
+        <label for="nombrepers">NB DE PERSONNE : </label><input id='nbpers' type="number">
+        <br><br>
+        <label for="temperature">C ° : </label><input id='temp' type="number">
+        <label for="temps">temps cuisson: </label><input id='tempcuit' type="number"><br><br>
+        <div>
+            <label for="ajouterdivers"> Ajouter les ingredients et grammes</label><br><br>
+            <label for="ingredient">INGREDIENTS : </label><input id="ingredient" class="" type="text">
+            <label for="quantite">GRAMMES: </label><input id="quantite" type="number"><button id="ajouter" onclick="ajouter()">+</button>
+        </div>
+        <!-- <br><br> -->
+        <!-- <div id="liste">
+        <label for="ajouterdivers"> Ajouter les ingredients et grammes</label><button id="ajouter" onclick="ajouter()">+</button>
+        <br><br>
+    </div> -->
+        <div id="divers">
+            <!-- ajouter les divers -->
+        </div>
+
+        <label for="Valider">VALIDER LA RECETTE : </label><button id="valider" onclick="divrecette()"> VALIDER</button>
+
+        <br><br>
+        <h3>Recette</h3>
+
+        <div id='toto'>
+
+
+        </div>
+
+        <br><br>
+
+        <script src="/pages/listedescourses/style.js"></script>
+</body>
+
+</html>

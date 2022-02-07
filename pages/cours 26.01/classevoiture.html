@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classetendu</title>
+</head>
+<body>
+    <h1>Voiture:</h1>
+    <p> marque, modele, année, couleur et caburant</p>
+
+    <p id='p1'></p>
+    <p id='p2'></p>
+    
+
+
+    <script>
+        class voiture {
+            /*Nous n'avons pas besoin de préciser "function" 
+            devant notre constructeur
+            et nos autres méthodes classe*/
+            constructor(marque, modele, annee) {
+                this.marque = marque;
+                this.modele = modele;
+                this.annee = annee;
+            }
+
+            toto() {
+                document.getElementById('p1').innerHTML +=
+                    'la marque  ' + this.marque + ' du modele   ' + this.modele + ` de l'année   ` + this.annee + '<br>'
+            };
+        };
+
+        class info extends voiture {
+            constructor(marque, modele, annee, couleur, caburant) {
+                super(marque, modele, annee); //Appelle le constructeur 
+                // parent
+                this.couleur = couleur;
+                this.caburant = caburant;
+            }
+
+            toto2() {
+                document.getElementById('p2').innerHTML +=
+                    'la marque de   '+ this.marque +  this.modele    + this.annee  +  ':  ' + 'le couleur est ' + this.couleur + ',' + ' le caburant est ' + this.caburant + '<br>'
+            };
+        }
+
+        let voi1 = new voiture ('Citroen', 'C5 aircoss', '2019');
+        voi1.toto();
+        
+        let cou1 = new info('Citroen', 'C5 aircoss', '2019', 'Bleu canard', 'gazole');
+        cou1.toto2();
+
+        
+
+        
+    </script>
+
+
+</body>
+</html>

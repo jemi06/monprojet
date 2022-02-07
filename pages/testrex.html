@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+ 
+<body class="bg-light">
+ 
+  <div class="container bg-white p-5 mt-5">
+    <!-- Logo -->
+    <div>
+      <img src="img/logo.png" class="img-fluid">
+    </div>
+    <!-- Button to call the praducts -->
+    <button class="btn btn-primary mt-2 mb-2" onclick='populateTableList()'>Show All</button>
+    <!-- Table  -->
+    <table class="table table-image">
+      <thead class="thead-dark">
+        <tr class="text-center">
+          <th>pic</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <!-- Table body with the list of products -->
+      <tbody id="productList">
+      </tbody>
+    </table>
+ 
+  </div>
+  <!-- Footer -->
+  <footer class="container fixed-bottom  bg-dark text-light">
+    <div class=" text-center py-3">© 2020 Copyright:
+      <a href="https://www.tutoderien.com"> www.tutoDerien.com</a>
+    </div>  
+  </footer>
+<!-- Code javaScript -->
+  <script>
+function Product(pic,name,price){
+  this.pic = pic;
+  this.name = name;
+  this.price =price;
+}
+
+const nx310 = new Product("img/nx310.png",'nx 310',70);
+const p5 = new Product('img/p5.png','p5',58);
+const nsk4100 = new Product('img/nsk4100.jpg','nsk4100',60);
+const vsk3000 = new Product('img/vsk3000elite.jpg','vsk3000',44.99)
+
+let products = [];
+const nx310 = new Product("img/nx310.png",'nx 310',70);
+const p5 = new Product('img/p5.png','p5',58);
+const nsk4100 = new Product('img/nsk4100.jpg','nsk4100',60);
+const vsk3000 = new Product('img/vsk3000elite.jpg','vsk3000',44.99)
+products.push(nx310,p5,nsk4100,vsk3000);
+
+let products = [];
+const nx310 = new Product("img/nx310.png",'nx 310',70);
+const p5 = new Product('img/p5.png','p5',58);
+const nsk4100 = new Product('img/nsk4100.jpg','nsk4100',60);
+const vsk3000 = new Product('img/vsk3000elite.jpg','vsk3000',44.99)
+products.push(nx310,p5,nsk4100,vsk3000);
+  </script>
+</body>
+ 
+</html>

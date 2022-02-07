@@ -1,0 +1,196 @@
+.cssete {
+    --bodybgc: #D9AFD9;
+    --bodybgi: background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    --colormenu: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    ;
+}
+
+.csshiver {
+    --bodybgc: #21D4FD;
+    --bodybgi: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    --colormenu: radial-gradient(circle, rgb(224, 69, 69) 0%, rgba(128, 26, 38, 1) 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*#region body*/
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    /* background-color: rgb(212, 226, 16); */
+    /* background-image: var(--bodybgc); */
+    background-color: var(--bodybgc);
+    box-sizing: border-box;
+    position: relative;
+    background-image: var(--bodybgi);
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    margin: 20Px;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btng {
+    width: 80%;
+    background: var(--colormenu);
+}
+
+.btnd {
+    width: 20%;
+    float: right;
+}
+
+.article1 {
+    display: flex;
+    flex-direction: row;
+    border: rgb(255, 255, 255) solid 2px;
+    margin: 10px;
+    width: auto;
+    height: 210px;
+    background-color: #064563;
+}
+
+#photo {
+    width: 50%;
+    background-image: url(/image/fleur1.jpg);
+    background-size: cover;
+    border: rgb(206, 194, 177) solid 3px;
+}
+
+#photo>img {
+    width: 100%;
+    height: 100%;
+}
+
+#photo:hover {
+    background-image: url(/image/fleur2.jpg);
+}
+
+.calc {
+    width: 50%;
+    margin: 20px;
+}
+
+.btn {
+    flex-direction: row;
+    justify-items: stretch;
+}
+
+
+/* Slideshow container */
+
+.article2 {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+}
+
+.texte {
+    width: 600px;
+    height: 100px;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple rgb(217, 223, 217);
+    scrollbar-width: thin;
+}
+
+.article3 {
+    display: flex;
+    margin: 10px;
+    width: auto;
+    height: 200px;
+}
+
+.img1 {
+    background-image: url(/image/ptete1.jpg);
+    width: 40%;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 45%;
+    margin: 15px;
+}
+
+.img2 {
+    background-image: url(/image/ptete2.jpg);
+    width: 40%;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 45%;
+    margin: 15px;
+}
+
+.img3 {
+    background-image: url(/image/ptete3.jpg);
+    width: 40%;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 45%;
+    margin: 15px;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    cursor: zoom-in;
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.video {
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.lien {
+    display: flex;
+    flex-direction: row;
+}
+
+.droite,
+.milieu,
+.gauche {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 0px 60px 0px;
+    width: 100%;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 247, 247);
+    text-align: center;
+    font-style: italic;
+}

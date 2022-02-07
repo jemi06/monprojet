@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const G1 = [12, 14, 08, 11, 17];
+
+        //moyenne.
+        const moygroupe = G1.reduce((a, b) => a + b)
+        const moy = moygroupe / G1.length
+        console.log(`moyenne note du tableau : ${G1}`);
+
+        // minimun. 
+        const MinAetB = (x, y) => x < y ? x : y
+        const min = (collection) => collection.reduce(MinAetB, collection[0]);
+        console.log(`mauvais note du tableau : ${min(G1)}`);
+
+        // maximum. 
+        const MaxAetB = (a, b) => a > b ? a : b;
+        const max = (collection) => collection.reduce(MaxAetB, collection[0]);
+        console.log(`meilleur note du tableau : ${max(G1)}`);
+
+        // decroissante
+        G1.sort();
+        console.log(`decroissante : ${G1}`);
+    </script>
+
+
+
+
+
+</body>
+
+</html>
