@@ -1,10 +1,17 @@
-function changeColor(color) {
-    document.body.style.background = color;
-}
+const jsimg = document.getElementById("photo");
+const imgs = ["url(/image/ete1.jpeg)", " url(/image/ete2.jpeg)", "url(/image/ete3.jpeg)"]
+let count = 0;
 
+jsimg.addEventListener('mouseenter', function() {
+    // this.style.border = "green";
+    if (count == 3) {
+        count = 0
+    } else {
+        count += 1
+    }
 
-
-
+    this.style.backgroundImage = imgs[count]
+})
 
 function recup(click_id) {
     let a = parseFloat(document.getElementById('input1').value);
@@ -73,4 +80,33 @@ function funct5(num, motif) {
         document.write("<br>");
         k--;
     }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             CHANGEMENT DE THEME                            */
+/* -------------------------------------------------------------------------- */
+
+// const jsete = document.documentElement.className("csshiver");
+
+console.dir(document)
+
+
+function cssete() {
+
+
+    // document.documentElement.className("cssete")
+
+    // const jscorps = document.getElementById("corps");
+    const jscorps = document.documentElement
+    jscorps.className = "cssete";
+}
+
+function csshiver() {
+
+
+    // document.documentElement.className("cssete")
+
+    // const jscorps = document.getElementById("corps");
+    const jscorps = document.documentElement
+    jscorps.className = "csshiver";
 }
