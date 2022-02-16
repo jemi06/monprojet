@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+body {
+    width: 1024px;
+    margin: auto;
+   background-color: rgb(212, 233, 233);
+}
+.d-flex{
+    color: orange !important;
+    font-weight: bold;
+}
+.bg-primary{
+    background-color: rgb(87, 92, 92) !important;
+}
+
+.sousmenu{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 300px;
+  
+}
+.photo{
+    background-image: url("/pages/projet-dwwm/assets/img/informatique.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    border:black 2px solid;
+    margin-right: 10px;
+    
+}
+
+.mot {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border:black 2px solid;
+    border-radius: 40px;
+  
+}
+.video{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border: black 1px solid
+  ;
+}
+.contraine{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height:400px ;
+   
+}
+
+#imgcli {
+    width: 50%;
+    background-image: url(/pages/projet-dwwm/assets/img/img1.jpg);
+    background-size: cover;
+    border: ridge 1px #000000;
+    cursor: pointer;
+    
+  }
+ #imgcli>img {
+        width: 100%;
+        height: 100%;
+        background-image: url(/img/);
+    }
+
+.zoom{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 400px;
+        margin-left: 20px;
+        padding: 30px;
+       align-items: center;
+        border-radius: 40px;
+        background-color: coral;
+      
+    }
+.zoomimage{
+    display: flex;
+    background-image: url("/pages/projet-dwwm/assets/img/zoom.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(15, 15, 15);
+    border-radius: 50%;
+    margin: 15px;
+
+}
+.zoomimage:hover{ 
+    cursor: zoom-in;
+    -ms-transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.contact{
+    display: flex;
+    height: 420px;
+    flex-direction: column;
+    align-items: center;
+    border:black 2px solid;
+    border-radius: 30px;
+    background-color:beige
+    
+}
+#formulaire{
+    display: flex;
+    flex-direction: column;
+}
+.contact h2{
+    border: #000000 1px solid;
+    padding: 10px;
+    color:rgb(64, 153, 56);
+  
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(87, 92, 92);
+    color: orange;
+    border-radius: 20px;
+}
