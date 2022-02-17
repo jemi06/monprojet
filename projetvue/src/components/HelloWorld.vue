@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
 <!-- efface les textes -->
   </div>
+  
    <div>
     <h2>Testing Bootstrap buttons</h2>
     <button class="btn btn-primary">Test</button>
